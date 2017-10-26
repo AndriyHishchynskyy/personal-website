@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Andriy Hishchynskyy</title>
+       <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>resume</h2>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>skils</li>
+                <li>educatio</li>
+                <li>portfolio</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <img src="css/images/laptop.jpg" alt="laptop">
+    <h1>Hi, I am Andriy Hishchynskyy beginer in web development</h1>
+    <h2>let me tel You about  me</h2>
+    <img src="css/images/andriy-hishchynskyy.jpg" alt="andriy hishchynskyy">
+    <p>
+        Hi I'm Andriy Hishchynskyy active, hard-working boy ready for quick and efective studying and practice. 
+        Dream to become a full stack developer.
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">personal information</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>d.o.b.</td><td>06-june-1997</td>
+        </tr>
+        <tr>
+            <td>phone</td><td>+38 (093) 450 72 60</td>
+        </tr>
+        <tr>
+            <td>email</td><td><a href="mailto:andriyhischynskyy@gmail.com">andriyhischynskyy@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td>address</td><td>Lviv region, Peremyshlyany, Pryvokzalna street, 20B/9</td>
+        </tr>
+        <tr>
+            <td>experience</td><td>0+ years</td>
+        </tr>
+        <tr>
+            <td>websites</td><td>...</td>
+        </tr>
+    </table>
+    <h2>skils</h2>
+    <img src="css/images/icons/html-icon.png" alt="html icon">
+    <img src="css/images/icons/js-icon.png" alt="javascript icon">    
+    <img src="css/images/icons/css-icon.png" alt="css icon">
+    <h2>education</h2>
+        <div>
+            <section>
+                <h4>Marketing</h4>
+                <p>
+                    Lviv national university of veterinary medicine and biotechnology named after S.Z.Gzytskyy
+                </p>
+                <p>
+                    Sep 2014-nowadays
+                </p>
+            </section>
+            <section>
+                <h4>HTML5, CSS3, JavaScript Fundamentals</h4>
+                <p>
+                    SoftServe
+                </p>
+                <p>
+                    Aug 2017-Sep 2017
+                </p>
+            </section>    
+        </div> 
+    <h2>portfolio</h2>
+    <div>
+        
+    </div>
+    <h2>contact</h2>
+    <p>
+        Get in touch with me!
+    </p>
+    <form>
+        <input type="text" name="name" placeholder="Name" required>
+        <br>
+        <input type="email" name="email" placeholder="Email" required>
+        <br>
+        <input type="text" name="message" placeholder="Message">
+        <br>
+        <input type="reset" value="reset">
+        <input type="submit" value="send">
+    </form>
+    <!-- key to use map label
+    AIzaSyDbtZSkToGTtFQEtXAmXp-k8aB9jnnvGAs
+    -->
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbtZSkToGTtFQEtXAmXp-k8aB9jnnvGAs&callback=initMap">
+    </script>
+    <h5>find me</h5>
+    <div>
+        <a href="https://www.facebook.com/">
+            <img src="css/images/icons/fb-icon-60.png" alt="facebook icon">
+        </a>    
+    </div>
+    <h5>find me</h5>
+</body>    
+</html>
